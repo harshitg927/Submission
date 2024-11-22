@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(135, 120, 45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#chessboard {
+  width: 560px;
+  height: 560px;
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  z-index: 0;
+}
+
+.square svg {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  position: relative;
+  z-index: -9;
+}
+
+path {
+  position: relative;
+  z-index: -10;
+}
+
+.grey-square {
+  background-color: #6b6b6b;
+}
+
+.white-square {
+  background-color: #eeeed2;
+}
+
+.pieces {
+  position: relative;
+  z-index: 9;
+}
+
+.black {
+  fill: black;
+}
+
+.white {
+  fill: rgb(255, 255, 255);
+}
+
+.white path {
+  filter: drop-shadow(10px 10px 10px black);
+}
